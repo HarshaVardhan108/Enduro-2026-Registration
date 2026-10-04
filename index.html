@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENDURO 2026 | Annual Technical Workshops in AI, ML & Python</title>
+  <meta name="description"
+    content="Enduro 2026 Annual Technical Workshops organized by Wisdom Eye in association with Distinguished IIT Professors. Free Phase 1 online, hands-on labs, residential Phase 2, and merit-based stipends." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Address Bar / Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Core Orange Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- =======================================================================
+       HEADER & NAVIGATION
+       ======================================================================= -->
+  <header class="navbar" id="topNavbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="Enduro 2026 Home">
+        <div class="brand-icon">
+          <!-- Orange Flame / Tech Hexagon SVG -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">ENDURO <span class="gradient-text">2026</span></span>
+          <!-- <span class="brand-subtitle">ANNUAL TECHNICAL WORKSHOPS</span> -->
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links matching the exact Flow -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">ENDURO 2026</a></li>
+          <li><a href="#about">About Workshop</a></li>
+          <li><a href="#phases">Phase 1 & Phase 2</a></li>
+          <li><a href="#mentors">Support & Advisory Board</a></li>
+          <li><a href="#previous-editions">Previous Editions</a></li>
+          <li class="nav-link-register"><a href="#register"
+              style="color:var(--orange-primary); font-weight:700;">Register Now</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Theme">☀️</button>
+        <a href="#register" class="btn btn-primary btn-sm">
+          <span>Register Now</span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       1. ENDURO TITLE (Slide 1)
+       ======================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container-slide1">
+
+      <!-- Date Banner from Slide 1 -->
+      <div class="hero-date-badge">
+        OCT 26 to -July '27
+      </div>
+
+      <!-- Main Title & Subtitle from Slide 1 -->
+      <h1 class="hero-main-title">
+        ENDURO 2026
+      </h1>
+      <h2 class="hero-sub-title">
+        ANNUAL WORKSHOPS
+      </h2>
+
+      <!-- 3 Pillars from Slide 5: Character, Competence, Culture -->
+      <div class="hero-tracks-row">
+
+        <!-- Character -->
+        <div class="hero-track-card">
+          <div class="track-icon-wrapper character-icon">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+              <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+              <path d="M7 21h10"></path>
+              <path d="M12 3v18"></path>
+              <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+            </svg>
+          </div>
+          <h3 class="track-card-title">Character</h3>
+        </div>
+
+        <!-- Competence -->
+        <div class="hero-track-card">
+          <div class="track-icon-wrapper competence-icon">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z">
+              </path>
+              <line x1="9" y1="21" x2="15" y2="21"></line>
+              <line x1="10" y1="17" x2="14" y2="17"></line>
+            </svg>
+          </div>
+          <h3 class="track-card-title">Competence</h3>
+        </div>
+
+        <!-- Culture -->
+        <div class="hero-track-card">
+          <div class="track-icon-wrapper culture-icon">
+            <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="21" x2="20" y2="21"></line>
+              <line x1="4" y1="10" x2="20" y2="10"></line>
+              <path d="m12 2 8 8H4z"></path>
+              <line x1="6" y1="10" x2="6" y2="21"></line>
+              <line x1="10" y1="10" x2="10" y2="21"></line>
+              <line x1="14" y1="10" x2="14" y2="21"></line>
+              <line x1="18" y1="10" x2="18" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="track-card-title">Culture</h3>
+        </div>
+      </div>
+
+      <!-- Bottom Association Box from Slide 1 -->
+      <div class="hero-organizer-box">
+        <div class="org-col">
+          <span class="org-label">Organized by</span>
+          <span class="org-name">Wisdom Eye</span>
+        </div>
+        <div class="org-divider"></div>
+        <div class="org-col">
+          <span class="org-label">In Association with</span>
+          <span class="org-name">Distinguished IIT Professors & Alumnus</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       2. ABOUT WORKSHOP (Slide 2 & Slide 3)
+       ======================================================================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+
+      <!-- Philosophy Quote from Slide 2 -->
+      <div class="quote-banner">
+        <blockquote>
+          &ldquo;Our Education should be Entertaining, &amp; Entertainment should be Educating. This initiative is blend
+          of both.&rdquo;
+        </blockquote>
+      </div>
+
+      <!-- =======================================================================
+           2. ABOUT WORKSHOP: What is Enduro 2026 (Slides 8 to 11)
+           ======================================================================= -->
+      <div class="slide-content-block about-enduro-tracks-section"
+        style="margin-top: 2rem; padding-top: 0; border-top: none;">
+        <div class="section-heading-wrap text-center">
+          <span class="sub-label">ABOUT WORKSHOP</span>
+          <h2 class="main-heading">What is Enduro 2026</h2>
+          <p class="sub-lead">
+            &ldquo;Best in class personality development alongside technical learning from subject matter experts&rdquo;
+          </p>
+        </div>
+
+        <div class="about-tracks-grid">
+          <!-- 1. ATW Grid Card (Slide 10, Slides 12-20) -->
+          <a href="atw.html" target="_blank" rel="noopener noreferrer" class="track-overview-card track-atw-card"
+            aria-label="Explore 1. ATW Annual Technical Workshop in a new tab">
+            <div class="track-card-top">
+              <span class="track-card-badge">TRACK 01</span>
+              <span class="track-new-tab-indicator">Opens in new tab &#8599;</span>
+            </div>
+            <div class="track-card-header">
+              <div class="track-card-icon atw-card-icon">&#9881;</div>
+              <div>
+                <span class="track-card-num">1. ATW</span>
+                <h3 class="track-card-title">Annual Technical Workshop</h3>
+              </div>
+            </div>
+            <p class="track-card-motto">&ldquo;To boost our competence&rdquo;</p>
+            <p class="track-card-desc">
+              Empowering students to design, develop, and code practical software solutions under the mentorship of
+              distinguished IIT professors and industry leaders. Combines hands-on training in Python and Machine
+              Learning with an authentic corporate internship experience.
+            </p>
+            <div class="track-card-pills">
+              <span>Python Workshop</span>
+              <span>Machine Learning</span>
+              <span>Real-World Projects</span>
+              <span>IIT Faculty Mentorship</span>
+            </div>
+            <div class="track-card-action">
+              <span class="btn-track-action">Explore ATW Details &rarr;</span>
+            </div>
+          </a>
+
+          <!-- 2. SMC Grid Card (Slide 11, Slides 21-32) -->
+          <a href="smc.html" target="_blank" rel="noopener noreferrer" class="track-overview-card track-smc-card"
+            aria-label="Explore 2. SMC Self Management Course in a new tab">
+            <div class="track-card-top">
+              <span class="track-card-badge smc-badge-pill">TRACK 02</span>
+              <span class="track-new-tab-indicator">Opens in new tab &#8599;</span>
+            </div>
+            <div class="track-card-header">
+              <div class="track-card-icon smc-card-icon">&#10024;</div>
+              <div>
+                <span class="track-card-num">2. SMC</span>
+                <h3 class="track-card-title">Self Management Course</h3>
+              </div>
+            </div>
+            <p class="track-card-motto">&ldquo;To nourish character &amp; culture&rdquo;</p>
+            <p class="track-card-desc">
+              Cultivating character, culture, and personal wholeness alongside technical competence. Features
+              edutainment through Wisdom Talks by top-tier SMEs, soft skills mastery (presentations, debates, skits, and
+              teamwork), and cultural retreats to historic heritage sites.
+            </p>
+            <div class="track-card-pills">
+              <span>Wisdom Talks (IITB &amp; KPIT SMEs)</span>
+              <span>Soft Skills &amp; Dramas</span>
+              <span>Cultural Retreats</span>
+              <span>Mind &amp; Lifestyle Balance</span>
+            </div>
+            <div class="track-card-action">
+              <span class="btn-track-action">Explore SMC Details &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       3. ABOUT PHASE 1 AND PHASE 2 (Slide 7)
+       ======================================================================= -->
+  <section class="phases-section" id="phases">
+    <div class="container">
+
+      <div class="section-heading-wrap text-center">
+        <h2 class="main-heading">Tentative Timeline for Enduro 2026</h2>
+        <p class="sub-lead">Following is a rough timeline for Annual Technical Workshops</p>
+      </div>
+
+      <!-- Timeline Table from Slide 7 -->
+      <div class="timeline-table-card">
+        <table class="timeline-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Date</th>
+              <th>Event of Significance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="date-cell">Oct 11:</td>
+              <td>Last Date of PhaseI Registration</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Oct 15:</td>
+              <td>Announcement of shortlist after due evaluation</td>
+            </tr>
+
+            <tr>
+              <td class="date-cell">Oct 18:</td>
+              <td>Orientation and Learning Basics</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Oct 2026 to March 2027:</td>
+              <td>Enduro Phase I</td>
+            </tr>
+            <tr>
+              <td class="date-cell">Mid April 2027:</td>
+              <td>Evaluation and shortlist for Phase II</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Fees Blocks from Slide 7 -->
+      <div class="fees-dual-grid">
+
+        <!-- Enduro Phase I Fees -->
+        <div class="fee-card-verbatim">
+          <h3>Enduro Phase I Fees*</h3>
+          <p>Phase I of Enduro 2026 will primarily be online. Hence there won't be any tuition fees.</p>
+        </div>
+
+        <!-- Enduro Phase II Fees -->
+        <div class="fee-card-verbatim">
+          <h3>Enduro Phase II Fees**</h3>
+          <p>Phase II of Enduro 2027 will be a residential program conducted in the vicinity of one of the partnering
+            educational institutions. Accommodation and Food will be arranged by the organizers along with tuition and
+            other infrastructure. Participants will be charged with nominal and subsidized fees.</p>
+          <div class="fee-stipend-note">
+            <p><strong>Note:</strong> Wisdom Eye shall offer stipends to all the participants on merit basis</p>
+            <p>Above scholarships shall be waived off from the final fees of Phase II</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       4. OUR SUPPORT AND ADVISORY BOARD
+       ======================================================================= -->
+  <section class="mentors-section" id="mentors">
+    <div class="container">
+
+      <div class="section-heading-wrap text-center">
+        <span class="sub-label">OUR</span>
+        <h2 class="main-heading">SUPPORT &amp; ADVISORY BOARD</h2>
+      </div>
+
+      <div class="mentors-board-layout">
+
+        <!-- Member 1: Ashwin Gami -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_ashwin.jpg" alt="Ashwin Gami" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">STRATEGIC ERP</span>
+              <h3 class="mentor-name">Ashwin Gami</h3>
+            </div>
+            <span class="mentor-side-category industry-tag">INDUSTRY</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Founder &amp; MD, Strategic ERP</strong></li>
+              <li>IIT Bombay &ndash; B.Tech (EE)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 2: Niranjan Pendharkar -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_niranjan.jpg" alt="Niranjan Pendharkar" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">Google</span>
+              <h3 class="mentor-name">Niranjan Pendharkar</h3>
+            </div>
+            <span class="mentor-side-category industry-tag">INDUSTRY</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Principal Engineer, Google</strong></li>
+              <li>Holds 60+ Patents</li>
+              <li>IISc &ndash; M.Tech (CS)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 3: Prof. Himanshu Asnani -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_himanshu.jpg" alt="Prof. Himanshu Asnani" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">Avtii / Stanford</span>
+              <h3 class="mentor-name">Prof. Himanshu Asnani</h3>
+            </div>
+            <span class="mentor-side-category academia-tag">ACADEMIA</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Founding Advisor, Avtii</strong></li>
+              <li>Stanford &ndash; Ph.D (EE)</li>
+              <li>IIT Bombay &ndash; B.Tech (EE)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 4: Prof. Gajendranath Ch -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_gajendranath.jpg" alt="Prof. Gajendranath Ch" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">IIT Hyderabad</span>
+              <h3 class="mentor-name">Prof. Gajendranath Ch</h3>
+            </div>
+            <span class="mentor-side-category academia-tag">ACADEMIA</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Assistant Professor at IIT Hyderabad</strong></li>
+              <li>IIT Delhi &ndash; Ph.D (EE)</li>
+              <li>Osmania University &ndash; B.Tech</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 5: Prof. Vipul Arora -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_vipul.jpg" alt="Prof. Vipul Arora" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">IIT Kanpur</span>
+              <h3 class="mentor-name">Prof. Vipul Arora</h3>
+            </div>
+            <span class="mentor-side-category academia-tag">ACADEMIA</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Assistant Professor at IIT Kanpur</strong></li>
+              <li>University of Oxford &ndash; Post Doc</li>
+              <li>IIT Kanpur &ndash; B.Tech, Ph.D (EE)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Member 6: Prof. Pavan Goel -->
+        <div class="mentor-card-verbatim">
+          <div class="mentor-top-row">
+            <img src="assets/mentor_pavan.jpg" alt="Prof. Pavan Goel" class="mentor-avatar-img" />
+            <div class="mentor-identity">
+              <span class="mentor-side-org">IIT Kharagpur</span>
+              <h3 class="mentor-name">Prof. Pavan Goel</h3>
+            </div>
+            <span class="mentor-side-category academia-tag">ACADEMIA</span>
+          </div>
+          <div class="mentor-details">
+            <h4 class="affiliations-title">Latest Affiliations:</h4>
+            <ul class="affiliations-list">
+              <li><strong>Assistant Professor at IIT Kharagpur</strong></li>
+              <li>University of Ulster &ndash; Ph.D (CS)</li>
+              <li>IIT Kanpur &ndash; B.Tech (EE)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       5. PREVIOUS EDITIONS
+       ======================================================================= -->
+  <section class="editions-section" id="previous-editions">
+    <div class="container">
+
+      <div class="section-heading-wrap text-center">
+        <h2 class="main-heading">Previous editions of Enduro</h2>
+      </div>
+
+      <div class="editions-grid-verbatim">
+
+        <!-- Photo 1: Hands on Lab Sessions -->
+        <div class="edition-card-verbatim">
+          <div class="edition-img-box">
+            <img src="assets/IMG_20250526_172730.jpeg" alt="Hands on Lab Sessions" loading="lazy" />
+          </div>
+          <h3 class="edition-caption">Participants at
+            <br />IITKGP Campus
+          </h3>
+        </div>
+
+        <!-- Photo 2: Hands on Lab Sessions -->
+        <div class="edition-card-verbatim">
+          <div class="edition-img-box">
+            <img src="assets/IMG_20250526_144043.jpeg" alt="Hands on Lab Sessions" loading="lazy" />
+          </div>
+          <h3 class="edition-caption">Hands on<br />Lab Sessions</h3>
+        </div>
+
+        <!-- Photo 3: Participants receiving Certificates -->
+        <div class="edition-card-verbatim">
+          <div class="edition-img-box">
+            <img src="assets/Certificate.png" alt="Participants receiving Certificates" loading="lazy" />
+          </div>
+          <h3 class="edition-caption">Certification</h3>
+        </div>
+
+        <!-- Photo 4: Last day of workshop -->
+        <div class="edition-card-verbatim">
+          <div class="edition-img-box">
+            <img src="assets/Picture1.png" alt="Last day of workshop" loading="lazy" />
+          </div>
+          <h3 class="edition-caption">Vist to Scenic Places</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =======================================================================
+       6. REGISTRATION PAGE
+       ======================================================================= -->
+  <section class="registration-portal-section" id="register">
+    <div class="container text-center">
+
+      <div class="register-slide-box">
+        <h2 class="register-main-title">REGISTER NOW</h2>
+
+        <div class="register-qr-wrapper">
+          <img src="assets/registration_qr.jpg" alt="Scan QR to Register" class="register-qr-img" />
+        </div>
+
+        <div class="register-link-row">
+          <p class="reg-label-text">
+            Registration link:
+            <a href="register.html" target="_blank" class="reg-link-url">https://wisdomeye.in/enduro2026/register</a>
+          </p>
+          <a href="register.html" target="_blank" class="btn btn-primary btn-lg" style="margin-top: 0.5rem;">
+            <span>Open Registration Form</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Enduro. Organized by Wisdom Eye in association with Distinguished IIT Professors.</p>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Logic -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

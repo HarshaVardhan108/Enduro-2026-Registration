@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATW - Annual Technical Workshops | Enduro 2026</title>
+  <meta name="description" content="Annual Technical Workshops (ATW) under Enduro 2026. Bringing the best of Academic and Industry experience in Python, ML, and real-world software engineering." />
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Address Bar / Favicon Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Header -->
+  <header class="navbar" id="topNavbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo" aria-label="Enduro 2026 Home">
+        <div class="brand-icon">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">ENDURO <span class="gradient-text">2026</span></span>
+          <span class="brand-subtitle">ATW &bull; Competence Track</span>
+        </div>
+      </a>
+
+      <!-- Quick Nav & Switch to SMC -->
+      <div class="nav-actions">
+        <a href="smc.html" class="btn btn-secondary btn-sm" title="View Self Management Course">
+          <span>Switch to SMC &rarr;</span>
+        </a>
+        <a href="index.html#about" class="btn btn-secondary btn-sm">
+          <span>&larr; Back to Main Site</span>
+        </a>
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="flex: 1; padding: 2.5rem 0 5rem;">
+    <div class="container" style="max-width: 1080px;">
+
+      <!-- Track Switcher Pills -->
+      <div class="track-page-tabs">
+        <a href="atw.html" class="track-tab-btn active">
+          <span class="track-tab-num">1</span>
+          <span class="track-tab-title">ATW: Annual Technical Workshops</span>
+        </a>
+        <a href="smc.html" class="track-tab-btn">
+          <span class="track-tab-num">2</span>
+          <span class="track-tab-title">SMC: Self Management Course</span>
+        </a>
+      </div>
+
+      <!-- Hero Banner for ATW -->
+      <div class="track-hero-box">
+        <span class="hero-badge-pill">ENDURO TRACK 1</span>
+        <h1 class="track-hero-title">Annual Technical Workshops (ATW)</h1>
+        <p class="track-hero-tagline">&ldquo;To boost our competence&rdquo;</p>
+        <p class="track-hero-sub">An attempt to bring the best of both worlds to students: bridging cutting-edge industry software craftsmanship with world-class academic rigour.</p>
+      </div>
+
+      <!-- Section: Best of Both Worlds -->
+      <div class="atw-dual-worlds-grid">
+        <!-- Industry Experience Card -->
+        <div class="world-card industry-world">
+          <div class="world-card-header">
+            <div class="world-icon">&#128188;</div>
+            <div>
+              <span class="world-label">Pillar 1</span>
+              <h3>Industry Experience</h3>
+            </div>
+          </div>
+          <ul class="world-points-list">
+            <li>
+              <strong>Get to know how things work in corporations:</strong> Understand enterprise architecture, agile sprints, and production deployment cycles.
+            </li>
+            <li>
+              <strong>Work with skilled professionals:</strong> Gain direct mentorship from seasoned industry tech leads and distinguished engineers.
+            </li>
+            <li>
+              <strong>Acquire the experience of building reliable software:</strong> Build robust, production-grade systems ready for real-world stress loads.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Academic Experience Card -->
+        <div class="world-card academic-world">
+          <div class="world-card-header">
+            <div class="world-icon">&#127891;</div>
+            <div>
+              <span class="world-label">Pillar 2</span>
+              <h3>Academic Experience</h3>
+            </div>
+          </div>
+          <ul class="world-points-list">
+            <li>
+              <strong>Learn concepts right from the fundamentals:</strong> Develop crystal-clear conceptual clarity guided by premier academic faculties.
+            </li>
+            <li>
+              <strong>Application oriented learning from SMEs:</strong> Connect pure theory with hands-on problem statements and real data models.
+            </li>
+            <li>
+              <strong>Associate with research scholars and their oceanic knowledge:</strong> Benefit from cutting-edge research methodologies from top IIT professors.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Section: What Do You Get to Learn -->
+      <div class="atw-curriculum-section">
+        <div class="section-heading-wrap text-center" style="margin-bottom: 2.5rem;">
+          <span class="sub-label">CURRICULUM BLUEPRINT</span>
+          <h2 class="main-heading">What Do You Get to Learn</h2>
+          <p class="sub-lead">Mastering foundational programming, project development, and modern machine intelligence.</p>
+        </div>
+
+        <div class="curriculum-trio-grid">
+          <!-- Item 1: Python Workshop -->
+          <div class="curriculum-item-card">
+            <div class="curriculum-num">01</div>
+            <div class="curriculum-icon-tag">&#128013; Core Foundations</div>
+            <h3>Python Workshop</h3>
+            <p>A detailed workshop on fundamentals of Python along with periodic assignments. Covers syntax, data structures, algorithms, object-oriented concepts, and clean coding best practices.</p>
+          </div>
+
+          <!-- Item 2: Python Mini-Project -->
+          <div class="curriculum-item-card">
+            <div class="curriculum-num">02</div>
+            <div class="curriculum-icon-tag">&#9881; Practical Execution</div>
+            <h3>Python Mini-Project</h3>
+            <p>Get hands-on experience with the intricacies and subtleties of Python. Apply your learning to engineer working utilities, data parsers, and backend workflow prototypes.</p>
+          </div>
+
+          <!-- Item 3: Machine Learning -->
+          <div class="curriculum-item-card featured-curriculum">
+            <div class="curriculum-num">03</div>
+            <div class="curriculum-icon-tag">&#129302; Intelligent Systems</div>
+            <h3>Machine Learning</h3>
+            <p>Learn the most sought-after skillsets in machine learning and develop your personal intelligent machine. Explore supervised &amp; unsupervised learning, model evaluation, and predictive pipelines.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Support & Guidance from Industry & Academia -->
+      <div class="support-dual-section">
+        <div class="section-heading-wrap text-center" style="margin-bottom: 2.5rem;">
+          <span class="sub-label">DUAL MENTORSHIP</span>
+          <h2 class="main-heading">Support and Guidance both from the Industry and Academia</h2>
+        </div>
+
+        <div class="support-dual-grid">
+          <div class="support-column-card">
+            <div class="support-header industry-header">
+              <span class="support-badge">PRACTICAL EXCELLENCE</span>
+              <h3>Industry Support</h3>
+            </div>
+            <ul class="support-list">
+              <li><strong>Course tutors</strong> who are actively working in the industry</li>
+              <li><strong>Internship projects</strong> derived directly from live scenarios in the industry</li>
+              <li><strong>Project Certificate</strong> upon verified milestone delivery</li>
+            </ul>
+          </div>
+
+          <div class="support-column-card">
+            <div class="support-header academia-header">
+              <span class="support-badge">CONCEPTUAL RIGOUR</span>
+              <h3>Academic Support</h3>
+            </div>
+            <ul class="support-list">
+              <li><strong>Structured syllabus</strong> and comprehensive teaching material vetted by IIT faculties</li>
+              <li><strong>Guidance of Teaching Assistants (TAs)</strong> throughout complex project phases</li>
+              <li><strong>Letter &amp; Certificate of Recognition</strong> from distinguished professors of premier institutes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Enduro. Organized by Wisdom Eye in association with Distinguished IIT Professors.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
