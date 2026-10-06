@@ -3040,12 +3040,35 @@ body.light-theme .navbar {
   box-shadow: var(--shadow-sm);
   border: 2px solid var(--orange-border);
   margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.register-qr-wrapper:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.2);
+  border-color: var(--orange-primary);
+}
+
+.register-qr-wrapper a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .register-qr-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: transform var(--transition-normal);
+}
+
+.register-qr-wrapper:hover .register-qr-img {
+  transform: scale(1.02);
 }
 
 .register-link-row {
@@ -4529,6 +4552,23 @@ body.light-theme .navbar {
   text-align: center;
   margin-bottom: 1rem;
   letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.phase-title-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 107, 44, 0.12);
+  color: var(--orange-primary);
+  border: 1px solid rgba(255, 107, 44, 0.28);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* Card Container with Intro Animation */
@@ -4561,14 +4601,96 @@ body.light-theme .navbar {
   box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 107, 44, 0.08);
 }
 
-/* Eligibility of Certification Card Wrapper */
+/* Eligibility Card Wrapper */
 .eligibility-card-wrapper {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 }
 
 .eligibility-card {
   max-width: 960px;
   margin: 0 auto;
+  background: linear-gradient(135deg, rgba(255, 107, 44, 0.08) 0%, rgba(56, 189, 248, 0.06) 100%);
+  border: 1px solid rgba(255, 107, 44, 0.28);
+  border-radius: 18px;
+  padding: 1.35rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 10px 28px -8px rgba(0, 0, 0, 0.4);
+}
+
+.eligibility-card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: rgba(255, 107, 44, 0.15);
+  border: 1px solid rgba(255, 107, 44, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  color: var(--orange-primary);
+}
+
+.eligibility-card-content h4 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.eligibility-card-content {
+  flex: 1;
+}
+
+.eligibility-card-content p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.eligibility-card-content p strong {
+  color: var(--orange-primary);
+}
+
+.eligibility-card-action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.eligibility-register-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.65rem;
+  font-size: 0.98rem;
+  font-weight: 800;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+  color: #ffffff !important;
+  box-shadow: 0 8px 24px rgba(255, 106, 0, 0.45);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.eligibility-register-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(255, 106, 0, 0.65);
+  filter: brightness(1.1);
+}
+
+.eligibility-register-btn svg {
+  transition: transform 0.25s ease;
+}
+
+.eligibility-register-btn:hover svg {
+  transform: translateX(4px);
 }
 
 /* Points List & Points Entrance Animations */
@@ -4697,6 +4819,14 @@ body.light-theme .navbar {
   line-height: 1.4;
 }
 
+.phase-sub-list li.has-pill {
+  padding-left: 0;
+}
+
+.phase-sub-list li.has-pill::before {
+  display: none;
+}
+
 /* Highlight Items (Free / Residential) */
 .phase-highlight-item {
   display: flex;
@@ -4728,6 +4858,10 @@ body.light-theme .navbar {
 .warning-text {
   color: #f87171;
   font-weight: 700;
+}
+
+.timeline-heading-wrap {
+  margin-top: 3.5rem;
 }
 
 /* Timeline & Fees Styling */
@@ -4853,6 +4987,22 @@ body.light-theme .navbar {
   background: rgba(0, 0, 0, 0.02);
 }
 
+.light-theme .phase-title-badge {
+  background: rgba(255, 107, 44, 0.1);
+  color: #ea580c;
+  border-color: rgba(255, 107, 44, 0.25);
+}
+
+.light-theme .eligibility-card {
+  background: linear-gradient(135deg, rgba(255, 107, 44, 0.06) 0%, rgba(2, 132, 199, 0.05) 100%);
+  border-color: rgba(255, 107, 44, 0.25);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.light-theme .eligibility-card-content p strong {
+  color: #ea580c;
+}
+
 /* Responsive Overrides */
 @media (max-width: 900px) {
   .phase-logistics-grid {
@@ -4864,6 +5014,19 @@ body.light-theme .navbar {
   }
   .phase-logistics-card {
     padding: 1.75rem 1.5rem;
+  }
+  .eligibility-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    gap: 1.25rem;
+  }
+  .eligibility-card-action {
+    width: 100%;
+  }
+  .eligibility-register-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
