@@ -3104,7 +3104,33 @@ body.light-theme .navbar {
 
 @media (max-width: 992px) {
   .hero-tracks-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.85rem;
+    margin-bottom: 1.15rem;
+  }
+  .hero-track-card {
+    padding: 1.4rem 0.85rem;
+  }
+  .track-icon-wrapper {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 0.75rem;
+  }
+  .track-icon-wrapper svg {
+    width: 30px;
+    height: 30px;
+  }
+  .track-card-title {
+    font-size: 1rem;
+  }
+  .hero-organizer-box {
+    padding: 1rem 1.5rem;
+  }
+  .org-label {
+    font-size: 0.82rem;
+  }
+  .org-name {
+    font-size: 1.05rem;
   }
   .mentors-board-layout {
     grid-template-columns: repeat(2, 1fr);
@@ -3122,6 +3148,56 @@ body.light-theme .navbar {
 }
 
 @media (max-width: 600px) {
+  /* Hero 3 Pillars (Character, Competence, Culture) - Compact Mobile Size */
+  .hero-tracks-row {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .hero-track-card {
+    padding: 0.75rem 0.35rem !important;
+    border-radius: 12px !important;
+  }
+  .track-icon-wrapper {
+    width: 38px !important;
+    height: 38px !important;
+    margin-bottom: 0.35rem !important;
+  }
+  .track-icon-wrapper svg {
+    width: 20px !important;
+    height: 20px !important;
+    stroke-width: 2.2 !important;
+  }
+  .track-card-title {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  /* Organizer Box - Compact Mobile Size */
+  .hero-organizer-box {
+    flex-direction: row !important;
+    padding: 0.65rem 0.75rem !important;
+    gap: 0.5rem !important;
+    border-radius: 12px !important;
+  }
+  .org-col {
+    flex: 1 !important;
+  }
+  .org-label {
+    font-size: 0.64rem !important;
+    margin-bottom: 0.15rem !important;
+  }
+  .org-name {
+    font-size: 0.75rem !important;
+    line-height: 1.25 !important;
+  }
+  .org-divider {
+    width: 1px !important;
+    height: 30px !important;
+    flex-shrink: 0 !important;
+  }
+
   .mentors-board-layout {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 0.75rem !important;
@@ -3185,13 +3261,31 @@ body.light-theme .navbar {
   .editions-grid-verbatim {
     grid-template-columns: 1fr;
   }
-  .hero-organizer-box {
-    flex-direction: column;
-    gap: 1.25rem;
+}
+
+@media (max-width: 380px) {
+  .hero-tracks-row {
+    gap: 0.35rem !important;
   }
-  .org-divider {
-    width: 60px;
-    height: 1px;
+  .hero-track-card {
+    padding: 0.6rem 0.2rem !important;
+  }
+  .track-icon-wrapper {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  .track-icon-wrapper svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .track-card-title {
+    font-size: 0.7rem !important;
+  }
+  .org-label {
+    font-size: 0.58rem !important;
+  }
+  .org-name {
+    font-size: 0.68rem !important;
   }
 }
 
